@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="currencyDiv">
+         <center>
+            <h1>Currency Converter</h1>
+         </center>
+         <h2 >From</h2>
+         <h2 class="valueText1">value</h2>
+         <br>
+        
+         <select  id="fromCurrency" onchange="setCurrency()"></select>
+         <input type="number" required class="value" id="fromCurrencyValue">
+        
+         <br><br>
+         <h2>To</h2>
+         <h2 class="valueText2">Value</h2>
+         <br>
+        
+         <select name="" id="toCurrency" onchange="setCurrency()">
+         </select>
+         <input type="text" class="value" id="currencyValue" disabled>
+<center><button onclick="convertCurrency()">Convert</button></center> 
+    </div>
+    <center><h3></h3></center>
+
+
+    <div id="dialogbox">
+    <center>
+        <div id="dialogbox-content">
+            <p id="resultpara">Network Error !</p>
+            <button id="playagainbtn" onclick="refreshPage()">Refresh</button>
+        </div>
+  
+    </center>
+    </div>
+
+
+    
+
+
+</body>
+</html>
